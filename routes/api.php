@@ -21,3 +21,7 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 Route::post('teste', function (Request $request) {
     \Illuminate\Support\Facades\Log::alert($request->all());
 });
+
+Route::get('teste', function (Request $request) {
+    \Illuminate\Support\Facades\Log::alert($request->all());
+});
